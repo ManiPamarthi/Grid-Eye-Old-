@@ -1,0 +1,10 @@
+@use './function' as func;
+
+@mixin btn($color:func.theme-color("black-color")) {
+    border-radius: 5px; 
+    color: $color;
+    font-size: 12px;
+    line-height: 28px;
+    min-width: 64px;
+    padding: 0 1rem;
+}

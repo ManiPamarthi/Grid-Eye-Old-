@@ -1,0 +1,9 @@
+[build]
+  base    = ""
+  publish = "dashboard/build"
+  command = "npm run build --type=UMD_DEV && cd dashboard && npm && npm prestart && npm build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

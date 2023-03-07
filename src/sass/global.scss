@@ -1,0 +1,227 @@
+@use './components/table';
+@use './components/button';
+@use './components/sidebar';
+@use './components/scrollbar';
+@use './components/device';
+@use './components/map';
+@use './abstracts/function' as func;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.device {
+    width: 100%;
+    height: 250px;
+}
+
+.substation {
+    position: absolute;
+    top: 55%;
+    left: 36%;
+}
+
+.substation2 {
+    position: absolute;
+    top: 47%;
+    right: 3%;
+}
+
+.substation3 {
+    position: absolute;
+    top: 14%;
+    right: 41%;
+}
+
+a.active {
+	.MuiButtonBase-root {
+		background-color: #c2ddfb6b;
+	}
+	.MuiSvgIcon-root {
+		color: #102040;
+	}
+	.MuiTypography-root {
+		color: #102040;
+		font-weight: 500;
+	}
+	.MuiListItem-root {
+		background-color: #c2ddfb6b;
+	}
+	.MuiTypography-body2 {
+		background-color: #c2ddfb6b;
+	}
+}
+
+a {
+    color: #102040;
+	font-weight: 500;
+}
+
+.DateRangePickerInput_arrow {
+	padding-right: 8px;
+	.DateRangePickerInput_arrow_svg {
+		width: 14px;
+		height: 14px;
+		fill:func.theme-color("text-main");
+	}
+}
+
+.DateRangePicker {
+	.DateRangePickerInput__withBorder {
+		padding: 5px;
+		border-radius: 5px;
+		border: 1px solid func.theme-color("secondary-light");
+		.DateInput {
+			width: 65px;
+			.DateInput_input {
+				padding: 0;
+				font-size: 12px;
+				border: none;
+				line-height: normal;
+				color: func.theme-color("text-main");
+				&::placeholder {
+					color: func.theme-color("text-main");
+				}
+			}
+		}
+	}
+}
+
+.hide-sidebar .inner-content {
+	margin-left: 0;
+	padding: 0;
+	background-color: #c2ddfb6b;
+}
+
+.hide-sidebar {
+	background-color: #c2ddfb6b;
+}
+
+.MuiBox-root {
+	.MuiFormControl-root.in-valid-input {
+		.MuiInputLabel-formControl {
+			color: #db5048;
+		}
+
+		.MuiOutlinedInput-root {
+			.MuiOutlinedInput-notchedOutline {
+				border: 1px solid #db5048;
+			}
+		}
+	}
+	.text-error {
+		color: #db5048;
+	}
+}
+
+.alert {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	text-align: center;
+	color: #a94442;
+    background-color: #f2dede;
+}
+
+a.change-login {
+	color: '#007aff';
+	text-decoration: auto;
+}
+
+.custom-dialog .MuiInputLabel-root {
+	text-transform: capitalize;
+}
+input[type=number]#port::-webkit-inner-spin-button,
+input[type=number]#port::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+#container {
+	margin: 5px auto;
+	z-index: 2;
+	/* background-image: linear-gradient(to right, #0e203f, #1b489f, rgb(14 32 63)); */
+	background-image: linear-gradient(90deg,#fff,#fff,#fff);
+  }
+  
+  .link {
+	stroke: rgb(224 224 224);
+	stroke-width: 1;
+  }
+  
+  .tooltip {
+	position: absolute;
+	max-width: 200px;
+	height: auto;
+	padding: 5px;
+	background-color: #333;
+	color: #eee;
+	border-radius: 5px;
+	box-shadow: 4px 4px 15px #bbb;
+	pointer-events: none;
+	text-align: center;
+	font-size: 10px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+  }
+
+  .tooltip .node-ip {
+	font-size: 16px;
+	font-weight: 500;
+  }
+  
+  #flags {
+	position: absolute;
+  }
+  
+  .flag {
+	width: 30px;
+	height: 5px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 5px;
+	color: #fff;
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	border: 1px solid #fff;
+  }
+  
+  .flag.sub {
+	background-image: url("../images/icon.png");
+	background-size: cover;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: 0px solid #fff;
+  }
+
+  
+/* No data msg */
+.no-data-msg,
+.data-loading-msg {
+	margin-top: 30px !important;
+  opacity: .8;
+}
+.communications-container {
+  min-height: 300px !important;
+  .MuiTablePagination-displayedRows {
+	display: none;
+  }
+}
+.communications-container .no-data-msg,
+.communications-container .data-loading-msg {
+	margin-top: 100px !important;	
+}
+input[type=number]#port::-webkit-inner-spin-button,
+input[type=number]#port::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
