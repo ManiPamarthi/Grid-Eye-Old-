@@ -1,0 +1,15 @@
+@use '../abstracts/function' as func;
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: func.theme-color("secondary-color");
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: func.theme-color("dark-color");
+    border-radius: 5px;
+}

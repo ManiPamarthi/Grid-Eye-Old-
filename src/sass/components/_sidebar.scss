@@ -1,0 +1,52 @@
+@use '../abstracts/function' as func;
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background-color: func.theme-color("light-color");
+    border-right: 1px solid func.theme-color("secondary-color");
+    box-shadow: 0 0 10px 0 rgb(82 63 105 / 15%);
+    .logo {
+        .logo-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .sidebar-list {
+        ul {
+            li {
+                a {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .sidebar-bottom {
+        border-top: 1px solid func.theme-color("secondary-color");
+        margin-top: auto;
+        box-shadow: 0 0 10px 0 rgb(82 63 105 / 15%);
+
+        .sidebar-bottom-icon {
+            display: flex;
+            column-gap: 1rem;
+            margin: 1rem;
+        }
+    }
+}
+
+.main {
+    margin-left: 200px;
+}
+
+.primary {
+    color: func.theme-color("dark-color");
+    span {
+        font-weight: 500;
+    }
+}
+
+.container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}

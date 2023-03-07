@@ -1,0 +1,46 @@
+#container {
+	margin: 5px auto;
+	z-index: 2;
+	background-image: linear-gradient(to right, #0e203f, #1b489f, rgb(14 32 63));
+}
+  
+.link {
+	stroke: #fff;
+	stroke-width: 1;
+}
+  
+.tooltip {
+	position: absolute;
+	max-width: 200px;
+	height: auto;
+	padding: 5px;
+	background-color: #333;
+	color: #eee;
+	border-radius: 5px;
+	box-shadow: 4px 4px 15px #bbb;
+	pointer-events: none;
+	text-align: center;
+}
+  
+#flags {
+	position: absolute;
+}
+  
+.flag {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	background-size: cover;
+    background-position: center;
+	border: 1px solid #fff;
+}
+  
+.flag.sub {
+	background-image: url('../images/icon.png');
+	background-size: cover;
+    background-position: center;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: 0px solid #fff;
+}
